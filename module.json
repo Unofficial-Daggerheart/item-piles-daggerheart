@@ -1,0 +1,51 @@
+{
+    "id": "item-piles-daggerheart",
+    "title": "Item Piles: Daggerheart",
+    "description": "Support for the Daggerheart systems within Item Piles",
+    "version": "0.1.0",
+    "compatibility": {
+        "minimum": "13",
+        "verified": "13",
+        "maximum": "13"
+    },
+    "authors": [
+        {
+            "name": "Nodra",
+            "discord": "nodra.vr"
+        }
+    ],
+    "scripts": [
+        "./module/daggerheart.mjs"
+    ],
+    "relationships": {
+        "systems": [{
+            "id": "daggerheart",
+            "type": "system",
+            "compatibility": {
+                "minimum": "1.0.1",
+                "verified": "1.0.1"
+            }
+        },{
+            "id": "daggerheart-unofficial",
+            "type": "system",
+            "compatibility": {
+                "minimum": "3.0.4",
+                "verified": "3.0.4"
+            }
+        }],
+        "requires": [
+            {
+                "id": "item-piles",
+                "type": "module",
+                "compatibility": {
+                    "minimum": "3.2.18",
+                    "verified": "3.2.18"
+                }
+            }
+        ]
+    },
+    "url": "https://github.com/unofficial-daggerheart/item-piles-daggerheart",
+    "bugs": "https://github.com/unofficial-daggerheart/item-piles-daggerheart/issues",
+    "download": "https://github.com/unofficial-daggerheart/item-piles-daggerheart/releases/latest/download/module.zip",
+    "manifest": "https://github.com/unofficial-daggerheart/item-piles-daggerheart/releases/latest/download/module.json"
+}
