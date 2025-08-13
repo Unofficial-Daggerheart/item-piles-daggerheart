@@ -14,7 +14,10 @@ async function setVersion() {
   const version = process.env.RELEASE_VER || tag?.replace('v', '');
   console.log(`Set Version: ${version}`);
   const moduleData = JSON.parse(fs.readFileSync(path, 'utf8'));
+
   moduleData.version = version;
+  moduleData.download = `https://github.com/Unofficial-Daggerheart/item-piles-daggerheart/releases/download/v${version}/module.zip`;
+  moduleData.manifest = `https://github.com/Unofficial-Daggerheart/item-piles-daggerheart/releases/download/v${version}/module.json`;
 
   // Write back to file
   fs.writeFileSync(path, JSON.stringify(moduleData, null, 2));

@@ -1,11 +1,3 @@
-// Hooks.once("init", () => {
-//     console.log("Daggerheart | Initializing Item Piles");
-// });
-
-// Hooks.once("ready", () => {
-//     console.log("Daggerheart | Loading Item Piles");
-// });
-
 // Setup for Unofficial Daggerheart
 async function setUnofficial(params) {
 	return game.itempiles.API.addSystemIntegration({
@@ -18,7 +10,7 @@ async function setUnofficial(params) {
 		// The attribute used to track the quantity of items in this system
 		ITEM_QUANTITY_ATTRIBUTE: 'system.quantity',
 		// The attributes for detecting item similarities
-		ITEM_SIMILARITIES: ['name'],
+		ITEM_SIMILARITIES: ['name', 'type'],
 		// The types of items that will always be considered unique when transferring between actors
 		UNSTACKABLE_ITEM_TYPES: [],
 		// The filters for item types eligible for interaction within this system
@@ -90,7 +82,7 @@ async function setFoundryborne(params) {
 		// The attribute used to track the quantity of items in this system
 		ITEM_QUANTITY_ATTRIBUTE: 'system.quantity',
 		// The attributes for detecting item similarities
-		ITEM_SIMILARITIES: ['name'],
+		ITEM_SIMILARITIES: ['name', 'type'],
 		// The types of items that will always be considered unique when transferring between actors
 		UNSTACKABLE_ITEM_TYPES: ['armor', 'weapon'],
 		// The filters for item types eligible for interaction within this system

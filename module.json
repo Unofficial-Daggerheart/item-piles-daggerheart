@@ -2,7 +2,7 @@
     "id": "item-piles-daggerheart",
     "title": "Item Piles: Daggerheart",
     "description": "Support for the Daggerheart systems within Item Piles",
-    "version": "0.1.0",
+    "version": "<BUILD_STEP>",
     "compatibility": {
         "minimum": "13",
         "verified": "13",
@@ -46,6 +46,6 @@
     },
     "url": "https://github.com/unofficial-daggerheart/item-piles-daggerheart",
     "bugs": "https://github.com/unofficial-daggerheart/item-piles-daggerheart/issues",
-    "download": "https://github.com/unofficial-daggerheart/item-piles-daggerheart/releases/latest/download/module.zip",
-    "manifest": "https://github.com/unofficial-daggerheart/item-piles-daggerheart/releases/latest/download/module.json"
+    "download": "",
+    "manifest": ""
 }
